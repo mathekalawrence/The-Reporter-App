@@ -20,7 +20,6 @@ import pickle
 from collections import abc
 from mysql.connector import connect
 
-
 def db_parameters():
     result_set = []
     file_name = open('config', 'rb')
@@ -169,4 +168,5 @@ def user_details_section(session_id):
     db.commit()
     db.close()
     return user_type, sub_set, result_set[0]
+
 
