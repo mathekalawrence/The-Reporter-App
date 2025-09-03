@@ -32,7 +32,6 @@ def db_parameters():
     result_set.append(st['password'])
     return result_set
 
-
 # update and keep the previous dict values.
 def update_dict_section(orig_dict, new_dict):
     for key, val in new_dict.items():
@@ -170,3 +169,4 @@ def user_details_section(session_id):
     db.commit()
     db.close()
     return user_type, sub_set, result_set[0]
+
