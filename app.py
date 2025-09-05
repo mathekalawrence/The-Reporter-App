@@ -1,6 +1,7 @@
 from flask import Flask, request, redirect, url_for, render_template, session
 from mysql.connector import connect
 import config
+#A flask project
 
 app = Flask(__name__)
 
@@ -187,5 +188,6 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True, port=80)
+
 
 
