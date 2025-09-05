@@ -21,8 +21,7 @@ def index():
     except Exception as e:
         print(e)
         return redirect(url_for('error_log'))
-
-
+#
 @app.route('/user', methods=['GET', 'POST'])
 def user():
     try:
@@ -188,4 +187,5 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True, port=80)
+
 
