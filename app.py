@@ -4,7 +4,6 @@ import config
 
 app = Flask(__name__)
 
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     try:
@@ -189,3 +188,4 @@ def logout():
 
 if __name__ == "__main__":
     app.run(debug=True, port=80)
+
